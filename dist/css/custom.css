@@ -1,0 +1,231 @@
+.navbar{
+	margin-bottom: 0;
+}
+.navbar-nav > li > a {
+	font-family: "Lato-regular";
+	font-size: 14px;
+	font-weight: normal;
+}
+.navbar-white{
+	background-color: #fff;
+}
+.navbar-white .navbar-nav > li > a {
+	color: #242c42;
+}
+.navbar-white .navbar-nav > li > a:hover,
+.navbar-white .navbar-nav > li > a:focus {
+	color: #ec1f27;
+	background-color: transparent;
+}
+.navbar-brand{
+	margin-left: 5px;
+}
+.navbar-brand img{
+	max-height: 40px;
+	margin-top: -5px;
+}
+#banner{
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/kitchen.jpg);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	background-attachment: fixed;
+	color: #fff;
+	min-height: 530px;
+}
+.banner-text{
+	padding-top: 150px;
+	padding-bottom: 100px;
+	margin-right: 21px;
+}
+.banner-header{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 55px;
+	line-height: 75px;
+	text-align: right;
+}
+.banner-body{
+	text-transform: uppercase;
+	font-weight: lighter;
+	font-size: 25px;
+	text-align: right;
+}
+.btn-ghost-white{
+	color: #fff;
+	background-color: transparent;
+	border: solid 3px #fff;
+}
+.banner-btn:hover{
+	background-color: #ec1f27;
+	border :solid 3px #ec1f27;
+}
+#search-box{
+	text-align: center;
+	padding: 20px;
+}
+.form-control{
+	border-radius: 0;
+}
+.btn{
+	border-radius: 0;
+}
+.button-search{
+	padding: 10px 75px;
+}
+.btn-red{
+	color: #fff;
+	background-color: #ec1f27;
+}
+.btn-red:hover{
+	background-color: #bf1017;
+}
+.select-primary .select2-choice {
+	color: #34495e;
+	background-color: inherit;
+}
+.form-group.focus .form-control,
+.form-control:focus,
+.form-group.focus .select2-search input[type="text"],
+.select2-search input[type="text"]:focus {
+	border-color: #ec1f27;
+}
+.select-primary .select2-choice:hover, 
+.select-primary .select2-choice.hover, 
+.select-primary .select2-choice:focus, 
+.select-primary .select2-choice:active {
+	color: #ffffff;
+	background-color: none;
+	border-color: #b2bcc5;
+}
+.select-choice{
+	border: 2px solid #bdc3c7;
+}
+#kelebihan, #flow, #search-box{
+	background-color: #f5f5f5;
+}
+.section-padding {
+	padding: 100px 0;
+}
+.panel-title{
+	text-align: center;
+}
+h2.title{
+	font-size: 30px;
+	font-weight: 900;
+	margin: 0 0 15px 0;
+	text-transform: uppercase;
+	line-height: 30px;
+	color: #49575f;
+}
+.title-description{
+	color: #6f8190;
+}
+.text-center{
+	text-align: center;
+}
+.menu{
+	margin-top: 20px;
+}
+h4.menu-title{
+	font-size: 18px;
+	margin-bottom: 0px;
+}
+p.menu-owner{
+	margin:0;
+	color: #6f8190;
+}
+.menu-price{
+	float: right;
+	color: #ec1f27;
+}
+.menu-type{
+	color: #6f8190;
+}
+.flow-title{
+	font-size: 30px;
+	font-weight: 900;
+}
+.subscription{
+	background-color: #ec1f27;
+	color: #fff;
+	text-align: center;
+	padding: 50px;
+}
+.subscription-title{
+	font-size: 30px;
+	margin-bottom: 30px;
+	margin-top: 0;
+}
+.subscription-btn:hover{
+	background-color: #fff;
+	color: #ec1f27;
+}
+.sub-form{
+	height: 48px;
+	display: inline;
+	width: 500px;
+	border: none;
+}
+.team-content{
+	margin-top: 80px;
+}
+.testimony{
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/section/fruits.jpg);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	background-attachment: fixed;
+	color: #fff;
+}
+.img-circle{
+	background-repeat: no-repeat;
+	background-position: 50%;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+}
+.testimony-content{
+	margin: 10px 0;
+}
+.testimony-name{
+	font-weight: 700;
+	color: #ec1f27;
+}
+.testimony-description{
+	color: #d4d5d5;
+}
+.testimony-text{
+	margin-top: 20px;
+}
+.people-img{
+	display: inline;
+	margin-right: 20px;
+}
+.footer-banner-red{
+	background-color: #ec1f27;
+}
+.footer-banner ul li {
+	border: none;
+}
+footer.dark-footer{
+	background-color: #222;
+	color: #fff;
+}
+#credit{
+	padding: 1px;
+	text-align: center;
+	background-color: #1d1d1d;
+	color: #fff;
+}
+h6.credit{
+	font-size: 16px;
+}
