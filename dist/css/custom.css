@@ -1,13 +1,19 @@
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: "Lato-bold";
+}
+body{
+	font-family: "Lato-regular"
+}
 .navbar{
 	margin-bottom: 0;
 }
 .navbar-nav > li > a {
-	font-family: "Lato-regular";
 	font-size: 14px;
 	font-weight: normal;
 }
 .navbar-white{
 	background-color: #fff;
+	border-bottom: solid 1px #ccc; 
 }
 .navbar-white .navbar-nav > li > a {
 	color: #242c42;
@@ -60,9 +66,18 @@
 	background-color: transparent;
 	border: solid 3px #fff;
 }
+.btn-ghost-dark{
+	color: #6f8190;
+	background-color: transparent;
+	border: solid 1px #6f8190;;
+}
 .banner-btn:hover{
 	background-color: #ec1f27;
 	border :solid 3px #ec1f27;
+}
+.btn-ghost-dark:hover{
+	color: #ec1f27;
+	border :solid 1px #ec1f27;
 }
 #search-box{
 	text-align: center;
@@ -80,6 +95,13 @@
 .btn-red{
 	color: #fff;
 	background-color: #ec1f27;
+	border: solid 1px #ec1f27;
+}
+.btn-menu{
+	margin: 0 auto;
+    margin-top: 20px;
+    display: block;
+    padding: 5px 50px;
 }
 .btn-red:hover{
 	background-color: #bf1017;
@@ -129,22 +151,28 @@ h2.title{
 	text-align: center;
 }
 .menu{
-	margin-top: 20px;
+	margin-top: 0;
 }
 h4.menu-title{
 	font-size: 18px;
-	margin-bottom: 0px;
+	margin: 0px;
+	color: #34495e;
+}
+.box:hover a h4.menu-title{
+	color: #ec1f27
 }
 p.menu-owner{
 	margin:0;
 	color: #6f8190;
+	font-family: "Lato"
 }
 .menu-price{
-	float: right;
+	float: right !important;
 	color: #ec1f27;
 }
 .menu-type{
 	color: #6f8190;
+	display: inline-block;
 }
 .flow-title{
 	font-size: 30px;
@@ -200,6 +228,22 @@ p.menu-owner{
 	font-weight: 700;
 	color: #ec1f27;
 }
+.box{
+	margin-bottom: 50px;
+}
+.box:after{
+	transition: all 0.5s ease;
+}
+.box:hover{
+	background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15)
+}
+.box-description{
+	padding-top: 0;
+	padding: 15px;
+    border: solid 2px #f5f5f5;
+    border-top: none;
+}
 .testimony-description{
 	color: #d4d5d5;
 }
@@ -228,4 +272,34 @@ footer.dark-footer{
 }
 h6.credit{
 	font-size: 16px;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+	margin-left: 0;
+}
+.home-icon [class^="flaticon-"]:before,.home-icon [class*=" flaticon-"]:before{
+	margin-left: 0;
+	font-size: 50px;
+}
+h5.kelebihan-title{
+	font-size: 20px;
+	color: #49575f;
+}
+.kelebihan-description{
+	color: #6f8190;
+}
+.kelebihan-section, .box-section, .flow-section{
+	margin-top: 60px;
+}
+a.filter-harian{
+	color: #242c42;
+	font-family: "Lato-bold";
+}
+a.filter-harian:hover{
+	color: #ec1f27;
+}
+.menu-filter{
+	padding: 50px 0;
+}
+.page-padding{
+	padding: 50px 0;
 }
