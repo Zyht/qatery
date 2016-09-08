@@ -3,19 +3,36 @@
 <head>
   <meta charset="utf-8">
   <title>Qatery | Tempat kamu cari makan yang murah dan enak</title>
-  <meta name="description" content="Flat UI Kit Free is a Twitter Bootstrap Framework design and Theme, this responsive framework includes a PSD and HTML version."/>
+  <meta name="description" content="Tempat cari katering makanan terdekat dan termurah"/>
 
   <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
 
   <!-- Loading Bootstrap -->
   <link href="dist/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
   <!-- Loading Flat UI -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link href="dist/fonts/essential/flaticon.css" rel="stylesheet">
   <link href="dist/css/flat-ui.css" rel="stylesheet">
   <link href="dist/css/custom.css" rel="stylesheet">
 </head>
 <body>
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-left">
+        <div class="social">
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="topbar-right pull-right">
+        <div class="group-sign-in">
+          <a href="#" class="login-top">Login</a>
+          <a href="#">Register</a>
+        </div>
+      </div>
+    </div>
+  </div>
   <nav class="navbar navbar-white" role="navigation">
     <div class="container">
       <div class="navbar-header">
@@ -27,311 +44,322 @@
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a href="/articles" title="Start Bootstrap News, Guides, and Tutorials">HOME</a>
+          <li class="active">
+            <a href="/articles" class="main-menu" title="Halaman awal">HOME</a>
           </li>
           <li>
-            <a href="/contact" title="Contact the Start Bootstrap Team">CONTACT</a>
+            <a href="/contact" class="main-menu" title="Kontak tim kami">CONTACT <i class="fa fa-angle-down"></i></a>
+            <ul class="sublist">
+              <li><a href="#" class="sub-menu">MASTER</a></li>
+              <li><a href="#" class="sub-menu">ADMIN</a></li>
+            </ul>
           </li>
           <li>
-            <a href="/contact" title="Contact the Start Bootstrap Team">SERVICES</a>
+            <a href="/contact" class="main-menu" title="Apa yang kami berikan">SERVICES</a>
           </li>
         </ul>
       </div>
-    </div>
-  </nav>
-  <section id="banner">
-    <div class="container">
-      <div class="banner-text">
-        <div class="banner-header">
-          TEMUKAN MAKANANMU
-        </div>
-        <p class="banner-body">
-          DENGAN HARGA TERJANGKAU DAN DEKAT
-        </p>
-        <div class="pull-right">
+    </nav>
+    <section id="banner">
+      <div class="container">
+        <div class="banner-text">
+          <div class="banner-header">
+            TEMUKAN MAKANANMU
+          </div>
+          <p class="banner-body">
+            DENGAN HARGA TERJANGKAU DAN DEKAT
+          </p>
           <button class="btn btn-ghost-white banner-btn">LIHAT SEMUA MENU</button>
         </div>
       </div>
-    </div>
-  </section>
-  <section id="search-box">
-    <div class="form-inline">
-      <div class="form-group">
-        <select class="form-control select select-primary" data-toggle="select">
-          <option value="0">Choose hero</option>
-          <option value="1">Spider Man</option>
-          <option value="2">Wolverine</option>
-          <option value="3">Captain America</option>
-          <option value="4" selected>X-Men</option>
-          <option value="5">Crocodile</option>
-        </select>
+    </section>
+    <section id="search-box">
+      <div class="form-inline">
+        <div class="form-group">
+          <select class="form-control select" data-toggle="select">
+            <option value="0" selected>Choose hero</option>
+            <option value="1">Spider Man</option>
+            <option value="2">Wolverine</option>
+            <option value="3">Captain America</option>
+            <option value="4">X-Men</option>
+            <option value="5">Crocodile</option>
+          </select>
+        </div>
+        <input type="text" class="form-control form-input form-lg" placeholder="Kota" />
+        <button class="btn button-search btn-red">Search</button>
       </div>
-      <input type="text" class="form-control" placeholder="Kota" />
-      <button class="btn button-search btn-red">Search</button>
-    </div>
-  </section>
-  <section id="menu" class="section-padding">
-    <div class="container">
-      <div class="panel-title">
-        <h2 class="title">Menu Hari ini</h2>
-        <p class="title-description">Mulai dari sarapan, makan siang, dan makan malam</p>
+    </section>
+    <section id="menu" class="section-padding">
+      <div class="container">
+        <div class="panel-title">
+          <h2 class="title">Menu Hari ini</h2>
+          <p class="title-description">Mulai dari sarapan, makan siang, dan makan malam</p>
+        </div>
+        <div class="menu">
+          <div class="row box-section">
+            <div class="col-md-3">
+              <div class="box">
+                <a href="#">
+                  <span class="box-image">
+                    <img src="img/content/1.jpg" class="img-responsive">
+                  </span> 
+                  <div class="box-description">
+                    <h4 class="menu-title">Pukis</h4>
+                    <p class="menu-owner">Pak Bambang</p>
+                    <span class="menu-type"><i class="flaticon-alarm-clock-1"></i> Siang</span>
+                    <span class="menu-price">Rp. 7.000,-</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="box">
+                <a href="#">
+                  <span class="box-image">
+                    <img src="img/content/2.jpg" class="img-responsive">
+                  </span> 
+                  <div class="box-description">
+                    <h4 class="menu-title">Ayam Goreng</h4>
+                    <p class="menu-owner">Bu Darmi</p>
+                    <span class="menu-type"><i class="flaticon-alarm-clock-1"></i> Siang</span>
+                    <span class="menu-price">Rp. 12.000,-</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="box">
+                <a href="#">
+                  <span class="box-image">
+                    <img src="img/content/3.jpg" class="img-responsive">
+                  </span> 
+                  <div class="box-description">
+                    <h4 class="menu-title">Kopi Tubruk</h4>
+                    <p class="menu-owner">Saluyu </p>
+                    <span class="menu-type"><i class="flaticon-alarm-clock-1"></i> Siang</span>
+                    <span class="menu-price">Rp. 15.000,-</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="box">
+                <a href="#">
+                  <span class="box-image">
+                    <img src="img/content/4.jpg" class="img-responsive">
+                  </span> 
+                  <div class="box-description">
+                    <h4 class="menu-title">Puhung</h4>
+                    <p class="menu-owner">Serabi Gendut</p>
+                    <span class="menu-type"><i class="flaticon-alarm-clock-1"></i> Siang</span>
+                    <span class="menu-price">Rp. 5.500,-</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-red btn-menu">LIHAT SEMUA</button>
+        </div>
       </div>
-      <div class="menu">
-        <div class="row box-section">
-          <div class="col-md-3">
-            <div class="box">
-              <a href="#">
-                <span class="box-image">
-                  <img src="img/content/1.jpg" class="img-responsive">
-                </span> 
-                <div class="box-description">
-                  <h4 class="menu-title">Pukis</h4>
-                  <p class="menu-owner">Pak Bambang</p>
-                  <span class="menu-type"><i class="flaticon-alarm-clock-1"></i> Siang</span>
-                  <span class="menu-price">Rp. 7.000,-</span>
+    </section>
+    <section id="flow" class="flow section-padding">
+      <div class="container">
+        <div class="panel-title">
+          <h2 class="title">Alur Pembelian</h2>
+          <div class="row flow-section">
+            <div class="col-md-2">
+              <div class="flow-box">
+                <div class="home-icon">
+                  <i class="flaticon-smartphone-7"></i>
                 </div>
-              </a>
+                <h5 class="kelebihan-title">1. Open your phone</h5>
+              </div>
             </div>
-          </div>
-          <div class="col-md-3">
-            <div class="box">
-              <a href="#">
-                <span class="box-image">
-                  <img src="img/content/2.jpg" class="img-responsive">
-                </span> 
-                <div class="box-description">
-                  <h4 class="menu-title">Ayam Goreng</h4>
-                  <p class="menu-owner">Bu Darmi</p>
-                  <span class="menu-type"><i class="flaticon-alarm-clock-1"></i> Siang</span>
-                  <span class="menu-price">Rp. 12.000,-</span>
+            <div class="col-md-2">
+              <div class="flow-box">
+                <div class="home-icon">
+                  <i class="flaticon-home-1"></i>
                 </div>
-              </a>
+                <h5 class="kelebihan-title">2. Wait in your home</h5>
+              </div>
             </div>
-          </div>
-          <div class="col-md-3">
-            <div class="box">
-              <a href="#">
-                <span class="box-image">
-                  <img src="img/content/3.jpg" class="img-responsive">
-                </span> 
-                <div class="box-description">
-                  <h4 class="menu-title">Kopi Tubruk</h4>
-                  <p class="menu-owner">Saluyu </p>
-                  <span class="menu-type"><i class="flaticon-alarm-clock-1"></i> Siang</span>
-                  <span class="menu-price">Rp. 15.000,-</span>
+            <div class="col-md-2">
+              <div class="flow-box">
+                <div class="home-icon">
+                  <i class="flaticon-paper-plane"></i>
                 </div>
-              </a>
+                <h5 class="kelebihan-title">3. We are flying to your house</h5>
+              </div>
             </div>
-          </div>
-          <div class="col-md-3">
-            <div class="box">
-              <a href="#">
-                <span class="box-image">
-                  <img src="img/content/4.jpg" class="img-responsive">
-                </span> 
-                <div class="box-description">
-                  <h4 class="menu-title">Puhung</h4>
-                  <p class="menu-owner">Serabi Gendut</p>
-                  <span class="menu-type"><i class="flaticon-alarm-clock-1"></i> Siang</span>
-                  <span class="menu-price">Rp. 5.500,-</span>
+            <div class="col-md-2">
+              <div class="flow-box">
+                <div class="home-icon">
+                  <i class="flaticon-unlocked-2"></i>
                 </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <button class="btn btn-red btn-menu">LIHAT SEMUA</button>
-      </div>
-    </div>
-  </section>
-  <section id="flow" class="flow section-padding">
-    <div class="container">
-      <div class="panel-title">
-        <h2 class="title">Alur Pembelian</h2>
-        <div class="row flow-section">
-          <div class="col-md-2">
-            <div class="flow-box">
-              <div class="home-icon">
-                <i class="flaticon-smartphone-7"></i>
+                <h5 class="kelebihan-title">4. Open your house lock</h5>
               </div>
-              <h5 class="kelebihan-title">1. Open your phone</h5>
             </div>
-          </div>
-          <div class="col-md-2">
-            <div class="flow-box">
-              <div class="home-icon">
-                <i class="flaticon-smartphone-7"></i>
+            <div class="col-md-2">
+              <div class="flow-box">
+                <div class="home-icon">
+                  <i class="flaticon-view-2"></i>
+                </div>
+                <h5 class="kelebihan-title">5. Check your food</h5>
               </div>
-              <h5 class="kelebihan-title">2. Open your phone</h5>
             </div>
-          </div>
-          <div class="col-md-2">
-            <div class="flow-box">
-              <div class="home-icon">
-                <i class="flaticon-smartphone-7"></i>
+            <div class="col-md-2">
+              <div class="flow-box">
+                <div class="home-icon">
+                  <i class="flaticon-id-card-4"></i>
+                </div>
+                <h5 class="kelebihan-title">6. Pay it</h5>
               </div>
-              <h5 class="kelebihan-title">3. Open your phone</h5>
-            </div>
-          </div>
-          <div class="col-md-2">
-            <div class="flow-box">
-              <div class="home-icon">
-                <i class="flaticon-smartphone-7"></i>
-              </div>
-              <h5 class="kelebihan-title">4. Open your phone</h5>
-            </div>
-          </div>
-          <div class="col-md-2">
-            <div class="flow-box">
-              <div class="home-icon">
-                <i class="flaticon-smartphone-7"></i>
-              </div>
-              <h5 class="kelebihan-title">5. Open your phone</h5>
-            </div>
-          </div>
-          <div class="col-md-2">
-            <div class="flow-box">
-              <div class="home-icon">
-                <i class="flaticon-smartphone-7"></i>
-              </div>
-              <h5 class="kelebihan-title">6. Open your phone</h5>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section id="subscription" class="subscription">
-    <div class="container">
-      <h3 class="subscription-title">Subscribe kami untuk pemberitahuan tentang diskon menarik</h3>
-      <input type="text" name="" class="form-control sub-form" placeholder="EMAIL">
-      <button class="btn btn-ghost-white subscription-btn">SUBSCRIBE</button>
-    </div>
-  </section>
-  <section id="team" class="section-padding">
-    <div class="container">
-      <div class="col-md-6">
-        <img src="img/content/team.png" class="img-responsive">
+    </section>
+    <section id="subscription" class="subscription">
+      <div class="container">
+        <h3 class="subscription-title">Subscribe kami untuk pemberitahuan tentang diskon menarik</h3>
+        <input type="text" name="" class="form-control sub-form" placeholder="EMAIL">
+        <button class="btn btn-ghost-white subscription-btn">SUBSCRIBE</button>
       </div>
-      <div class="col-md-6">
-        <div class="team-content">
-          <h2 class="title">Apa itu Qatery</h2>
-          <p class="title-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-          <button class="btn btn-red">TENTANG KAMI</button>
+    </section>
+    <section id="team" class="section-padding">
+      <div class="container">
+        <div class="col-md-6">
+          <img src="img/content/team.png" class="img-responsive">
         </div>
-      </div>
-    </div>
-  </section>
-  <section id="testimony" class="testimony section-padding">
-    <div class="container">
-      <div class="people-talk">
-        <div class="col-md-4">
-          <div class="testimony-content text-center">
-            <img src="img/people/1.jpg" class="people-img img-responsive img-circle">
-            <div class="testimony-text">
-              <div class="testimony-name">Lidya Hancook</div>
-              <div class="testimony-description">Aplikasinya memuaskan sekali bisa bikin saya lebih pintar dalam memilih makanan.</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="testimony-content text-center">
-            <img src="img/people/2.jpg" class="people-img img-responsive img-circle">
-            <div class="testimony-text">
-              <div class="testimony-name">Firman Dobleh</div>
-              <div class="testimony-description">Top markotop deh aplikasi ini, gak ada duanya deh untuk sekarang.</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="testimony-content text-center">
-            <img src="img/people/3.jpg" class="people-img img-responsive img-circle">
-            <div class="testimony-text">
-              <div class="testimony-name">Vicky Shu</div>
-              <div class="testimony-description">Cetar membahana gan!! gak punya kelemahan sama sekali aplikasi ini.</div>
-            </div>
+        <div class="col-md-6">
+          <div class="team-content">
+            <h2 class="title">Apa itu Qatery</h2>
+            <p class="title-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <button class="btn btn-red">TENTANG KAMI</button>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section id="kelebihan" class="section-padding">
-    <div class="container">
-      <div class="panel-title">
-        <h2 class="title">Kelebihan Kita</h2>
-        <div class="row kelebihan-section">
-          <div class="col-md-3">
-            <div class="kelebihan">
-              <div class="home-icon">
-                <i class="flaticon-like-1"></i>
+    </section>
+    <section id="testimony" class="testimony section-padding">
+      <div class="container">
+        <div class="people-talk">
+          <div class="col-md-4">
+            <div class="testimony-content text-center">
+              <img src="img/people/1.jpg" class="people-img img-responsive img-circle">
+              <div class="testimony-text">
+                <div class="testimony-name">Lidya Hancook</div>
+                <div class="testimony-description">Aplikasinya memuaskan sekali bisa bikin saya lebih pintar dalam memilih makanan.</div>
               </div>
-              <h5 class="kelebihan-title">Made with love</h5>
-              <p class="kelebihan-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="kelebihan">
-              <div class="home-icon">
-                <i class="flaticon-like-1"></i>
+          <div class="col-md-4">
+            <div class="testimony-content text-center">
+              <img src="img/people/2.jpg" class="people-img img-responsive img-circle">
+              <div class="testimony-text">
+                <div class="testimony-name">Firman Dobleh</div>
+                <div class="testimony-description">Top markotop deh aplikasi ini, gak ada duanya deh untuk sekarang.</div>
               </div>
-              <h5 class="kelebihan-title">Made with love</h5>
-              <p class="kelebihan-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="kelebihan">
-              <div class="home-icon">
-                <i class="flaticon-like-1"></i>
+          <div class="col-md-4">
+            <div class="testimony-content text-center">
+              <img src="img/people/3.jpg" class="people-img img-responsive img-circle">
+              <div class="testimony-text">
+                <div class="testimony-name">Vicky Shu</div>
+                <div class="testimony-description">Cetar membahana gan!! gak punya kelemahan sama sekali aplikasi ini.</div>
               </div>
-              <h5 class="kelebihan-title">Made with love</h5>
-              <p class="kelebihan-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="kelebihan">
-              <div class="home-icon">
-                <i class="flaticon-like-1"></i>
-              </div>
-              <h5 class="kelebihan-title">Made with love</h5>
-              <p class="kelebihan-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <footer class="dark-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-7">
-          <h3 class="footer-title">Subscribe</h3>
-          <p>Do you like this freebie? Want to get more stuff like this?<br/>
-            Subscribe to designmodo news and updates to stay tuned on great designs.<br/>
-            Go to: <a href="http://designmodo.com/flat-free" target="_blank">designmodo.com/flat-free</a>
-          </p>
-        </div> <!-- /col-xs-7 -->
-        <div class="col-xs-5">
-          <div class="footer-banner footer-banner-red">
-            <h3 class="footer-title">Get Flat UI Pro</h3>
-            <ul>
-              <li>Tons of Basic and Custom UI Elements</li>
-              <li>A Lot of Useful Samples</li>
-              <li>More Vector Icons and Glyphs</li>
-              <li>Pro Color Swatches</li>
-              <li>Bootstrap Based HTML/CSS/JS Layout</li>
-            </ul>
-            Go to: <a href="http://designmodo.com/flat" target="_blank">designmodo.com/flat</a>
+    </section>
+    <section id="kelebihan" class="section-padding">
+      <div class="container">
+        <div class="panel-title">
+          <h2 class="title">Kelebihan Kita</h2>
+          <div class="row kelebihan-section">
+            <div class="col-md-3">
+              <div class="kelebihan">
+                <div class="home-icon">
+                  <i class="flaticon-like-1"></i>
+                </div>
+                <h5 class="kelebihan-title">Made with love</h5>
+                <p class="kelebihan-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="kelebihan">
+                <div class="home-icon">
+                  <i class="flaticon-garbage-2"></i>
+                </div>
+                <h5 class="kelebihan-title">No trash food</h5>
+                <p class="kelebihan-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="kelebihan">
+                <div class="home-icon">
+                  <i class="flaticon-alarm-clock"></i>
+                </div>
+                <h5 class="kelebihan-title">No time to lose</h5>
+                <p class="kelebihan-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="kelebihan">
+                <div class="home-icon">
+                  <i class="flaticon-diamond"></i>
+                </div>
+                <h5 class="kelebihan-title">Clean service</h5>
+                <p class="kelebihan-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <section id="credit">
-    <h6 class="credit">Made with love by Zyth</h6>
-  </section>
-  <script src="dist/js/vendor/jquery.min.js"></script>
-  <script src="dist/js/flat-ui.min.js"></script>
-  <script src="docs/assets/js/application.js"></script>
-</body>
-</html>
+    </section>
+    <footer class="dark-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-7">
+            <h3 class="footer-title">Subscribe</h3>
+            <p>Do you like this freebie? Want to get more stuff like this?<br/>
+              Subscribe to designmodo news and updates to stay tuned on great designs.<br/>
+              Go to: <a href="http://designmodo.com/flat-free" target="_blank">designmodo.com/flat-free</a>
+            </p>
+          </div> <!-- /col-xs-7 -->
+          <div class="col-xs-5">
+            <div class="footer-banner footer-banner-red">
+              <h3 class="footer-title">Get Flat UI Pro</h3>
+              <ul>
+                <li>Tons of Basic and Custom UI Elements</li>
+                <li>A Lot of Useful Samples</li>
+                <li>More Vector Icons and Glyphs</li>
+                <li>Pro Color Swatches</li>
+                <li>Bootstrap Based HTML/CSS/JS Layout</li>
+              </ul>
+              Go to: <a href="http://designmodo.com/flat" target="_blank">designmodo.com/flat</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <section id="credit">
+      <h6 class="credit">Made with love by Zyth</h6>
+    </section>
+    <script src="dist/js/vendor/jquery.min.js"></script>
+    <script src="dist/js/flat-ui.min.js"></script>
+    <script src="docs/assets/js/application.js"></script>
+    <script type="text/javascript">
+      $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+        if (scroll >= 41) {
+          $(".navbar-white").addClass("navbar-fixed-top");
+        } else {
+          $(".navbar-white").removeClass("navbar-fixed-top");
+        }
+      });
+    </script>
+  </body>
+  </html>

@@ -9,13 +9,30 @@
 
   <!-- Loading Bootstrap -->
   <link href="dist/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
   <!-- Loading Flat UI -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link href="dist/fonts/essential/flaticon.css" rel="stylesheet">
   <link href="dist/css/flat-ui.css" rel="stylesheet">
   <link href="dist/css/custom.css" rel="stylesheet">
 </head>
 <body>
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-left">
+        <div class="social">
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="topbar-right pull-right">
+        <div class="group-sign-in">
+          <a href="#" class="login-top">Login</a>
+          <a href="#">Register</a>
+        </div>
+      </div>
+    </div>
+  </div>
   <nav class="navbar navbar-white" role="navigation">
     <div class="container">
       <div class="navbar-header">
@@ -27,14 +44,14 @@
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a href="/articles" title="Start Bootstrap News, Guides, and Tutorials">HOME</a>
+          <li class="active">
+            <a href="/articles" class="main-menu" title="Halaman awal">HOME</a>
           </li>
           <li>
-            <a href="/contact" title="Contact the Start Bootstrap Team">CONTACT</a>
+            <a href="/contact" class="main-menu" title="Kontak tim kami">CONTACT <i class="fa fa-angle-down"></i></a>
           </li>
           <li>
-            <a href="/contact" title="Contact the Start Bootstrap Team">SERVICES</a>
+            <a href="/contact" class="main-menu" title="Apa yang kami berikan">SERVICES</a>
           </li>
         </ul>
       </div>
@@ -43,9 +60,9 @@
   <section id="list-menu" class="page-padding">
     <div class="container">
      <div class="form-inline">
-      <input type="text" class="form-control" placeholder="Kota" />
+      <input type="text" class="form-control form-input form-lg bg-gray" placeholder="Kota" />
       <div class="form-group">
-        <select class="form-control select select-primary" data-toggle="select">
+        <select class="form-control select bg-gray" data-toggle="select">
           <option value="0">Choose hero</option>
           <option value="1">Spider Man</option>
           <option value="2">Wolverine</option>
@@ -61,14 +78,39 @@
     </div>
     <div class="menu-filter">
       <div class="row">
-        <div class="col-md-1"><a class="filter-harian" href="#">SENIN</a></div>
+        <div class="col-md-1"><a class="filter-harian active" href="#">SENIN</a></div>
         <div class="col-md-1"><a class="filter-harian" href="#">SELASA</a></div>
         <div class="col-md-1"><a class="filter-harian" href="#">RABU</a></div>
         <div class="col-md-1"><a class="filter-harian" href="#">KAMIS</a></div>
         <div class="col-md-1"><a class="filter-harian" href="#">JUMAT</a></div>
         <div class="col-md-1"><a class="filter-harian" href="#">SABTU</a></div>  
         <div class="col-md-1"><a class="filter-harian" href="#">MINGGU</a></div> 
-        <div class="col-md-3"><a class="filter-harian" href="#">ADVANCED FILTER</a></div> 
+        <div class="col-md-3 pull-right text-right">
+          <a class="filter-harian" id="filter">ADVANCED FILTER <span id="arrow" class="fa fa-angle-down" aria-hidden="true"></span>
+          </a>
+        </div> 
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="advanced-filter">
+            <div class="advanced-filter-body">
+              <div class="form-inline">
+                <div class="form-group">
+                  <input type="text" class="form-control form-input" placeholder="Harga minimal" />
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control form-input" placeholder="Harga maksimal" />
+                </div>
+                <select class="form-control select" data-toggle="select">
+                  <option value="0" selected>Pilih waktu</option>
+                  <option value="1">Makan Pagi</option>
+                  <option value="2">Makan Siang</option>
+                  <option value="3">Makan Sore</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="menu">
@@ -231,5 +273,26 @@
 <script src="dist/js/vendor/jquery.min.js"></script>
 <script src="dist/js/flat-ui.min.js"></script>
 <script src="docs/assets/js/application.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(window).scroll(function() {    
+      var scroll = $(window).scrollTop();
+      if (scroll >= 41) {
+        $(".navbar-white").addClass("navbar-fixed-top");
+      } else {
+        $(".navbar-white").removeClass("navbar-fixed-top");
+      }
+    });
+    $('#filter').click(function() {
+      if ( $( ".advanced-filter" ).is( ":hidden" ) ) {
+        $( ".advanced-filter" ).slideDown( "slow" );
+        $('#filter #arrow').removeClass('fa fa-angle-down').addClass('fa fa-angle-up');
+      } else {
+        $( ".advanced-filter" ).slideUp("slow");
+        $('#filter #arrow').removeClass('fa fa-angle-up').addClass('fa fa-angle-down');
+      }
+    });
+  });
+</script>
 </body>
 </html>
