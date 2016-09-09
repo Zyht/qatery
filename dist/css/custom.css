@@ -57,10 +57,11 @@ body{
 }
 .navbar-white{
 	background-color: #fff;
-	box-shadow: 3px 0 7px rgba(0, 0, 0, 0.3);
-	-webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.3);
-	-moz-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.3);
 	border-radius: 0px;
+	box-shadow: 3px 0 7px rgba(0,0,0,0.3);
+	-moz-box-shadow: 3px 0 7px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 3px 0 7px rgba(0,0,0,0.3);
+	-o-box-shadow: 3px 0 7px rgba(0,0,0,0.3);
 }
 .navbar-white .navbar-nav li.active .main-menu{
 	border-bottom: 3px solid #ec1f27;
@@ -112,17 +113,17 @@ li a.sub-menu{
 	list-style:none;
 	position:absolute;
 	min-width: 240px;
-    border-radius: 0;
-    border: none;
-    padding-left: 20px;
+	border-radius: 0;
+	border: none;
+	padding-left: 20px;
 	left:0px;
 	top:53px;
 	background:#fff;
 	width:240px;
 	opacity:0;
 	visibility:hidden; /* Avoids being selected even if the opacity is set to 0 */
-        
-        /* CSS3 Multiple Transitions */
+
+	/* CSS3 Multiple Transitions */
 
 	-moz-transition:opacity 0.2s 0.1s ease-out, visibility 0.1s 0.1s linear; 
 	-webkit-transition:opacity 0.3s ease-out, visibility 0.1s 0.1s linear;
@@ -176,6 +177,15 @@ li a.sub-menu{
 	max-height: 40px;
 	margin-top: -5px;
 }
+@media(max-width: 767px){
+	.navbar-brand{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-top: -29px;
+		margin-left: -58px;
+	}
+}
 #banner{
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/kitchen.jpg);
 	background-repeat: no-repeat;
@@ -207,6 +217,11 @@ li a.sub-menu{
 	font-weight: lighter;
 	font-size: 25px;
 	margin-left: 400px;	
+}
+@media(max-width: 970px){
+	.banner-header{
+		font-size: 40px;
+	}
 }
 .banner-btn{
 	margin-left: 400px;
@@ -395,6 +410,14 @@ p.menu-owner{
 	width: 500px;
 	border: none;
 }
+@media(max-width: 860px){
+	.subscription-title{
+		font-size: 20px;
+	}
+	.sub-form{
+		width: 300px
+	}
+}
 .team-content{
 	margin-top: 80px;
 }
@@ -524,4 +547,14 @@ a.filter-harian:hover{
 }
 #filter{
 	cursor:pointer;
+}
+.navbar-toggle{
+	float: left;
+}
+.navbar-toggle:before {
+	color: #ec1f27;
+}
+.navbar-toggle:hover:before,
+.navbar-toggle:focus:before {
+	color: #bf1017;
 }
