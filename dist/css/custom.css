@@ -22,8 +22,8 @@ a:hover, a:focus{
 a.link{
 	color: #6f8190;
 }
-.btn{
-	font-size: 14px;
+a.link.sign-up{
+	color: #ec1f27
 }
 a.link:hover{
 	color: #ec1f27;	
@@ -307,7 +307,7 @@ li a.sub-menu{
 	background-color: inherit;
 }
 .bg-gray{
-	background-color: #fafafa;
+	background-color: #f5f5f5;
 }
 
 /* ==================== END FORM ==================== */
@@ -688,7 +688,7 @@ label.price-label{
 .text-muted.label-block{
 	margin-top: 5px;
 }
-h2.recomendation-heading{
+h2.recomendation-heading, h2.cart-heading{
 	font-size: 20px;
 }
 .content-amount .form-input{
@@ -696,4 +696,46 @@ h2.recomendation-heading{
 }
 .content-amount{
 	display: inline-block;
+}
+ul.cart-list{
+	padding-left: 0;
+    margin-top: 20px;
+}
+ul li.cart-item{
+	list-style: none;
+}
+.cart-item .cart-item-image{
+    left: 0;
+    width: 250px;
+    overflow: hidden;
+    display: inline-block;
+}
+.cart-item h2.cart-item-name, .cart-item .cart-item-description, 
+.cart-item .cart-item-quota, .cart-item .cart-item-price, 
+.cart-item-crud{
+	display: inline;
+} 
+.cart-item h2.cart-item-name{
+	line-height: 1.6875em;
+    font-size: 24px;
+    font-weight: 700;
+    position: absolute;
+    margin: 0 30px;
+}
+.cart-item .cart-item-description{
+    margin: 40px 30px;
+    position: absolute;
+    max-width: 600px;
+    color: #6f8190;
+}
+.login-box{
+	background-color: #fff;
+	margin: 30px auto;
+	width: 700px;
+	border: solid 1px #ddd;
+	padding: 40px;
+	text-align: center;
+}
+.login-box .login-box-body{
+	padding: 30px 100px;
 }
